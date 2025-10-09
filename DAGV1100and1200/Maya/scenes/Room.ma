@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Room.ma
-//Last modified: Thu, Oct 09, 2025 04:30:35 PM
+//Last modified: Thu, Oct 09, 2025 04:34:00 PM
 //Codeset: 1252
 file -rdi 1 -ns "Sofa__Unit5_HardSurfaceLab_" -rfn "Sofa__Unit5_HardSurfaceLab_RN"
 		 -op "v=0;" -typ "mayaAscii" "C:/GitHub/Scripting Essentials (1700)/Scripting-Essentials/DAGV1100and1200/Maya//scenes/Sofa (Unit5_HardSurfaceLab).ma";
@@ -16,21 +16,22 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "B6C7CD5A-464A-5402-6C3C-7F85C28D88F9";
+fileInfo "UUID" "DD7CC242-4882-B1AA-FF69-BFBF040A0D95";
 createNode transform -s -n "persp";
 	rename -uid "B28A536E-4420-334E-9F2D-859899D8DC98";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.9163015598790403 16.537531285033754 4.5884436727842068 ;
-	setAttr ".r" -type "double3" -32.138347353236419 -1088.1999298879475 -3.7594661765134654e-05 ;
+	setAttr ".t" -type "double3" 3.8965743697971904 13.539124255476047 13.64544115758941 ;
+	setAttr ".r" -type "double3" -14.39999999999997 -2.0000000000000027 0 ;
+	setAttr ".rpt" -type "double3" 8.2254023635171785e-18 -1.4502769638364106e-17 1.2666437564478056e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "65F46635-4F73-EB81-F818-B9AE17D89440";
 	setAttr -k off ".v" no;
-	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 22.369186502845942;
+	setAttr ".fl" 34.999999999999979;
+	setAttr ".coi" 24.47064565846749;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 9.0525107383728027 7.8466389179229736 -10.388587951660156 ;
+	setAttr ".tp" -type "double3" 4.6719403369664683 8.5421087561234419 -10.041975639285269 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "DED61037-49CA-E846-47D6-66A0AF31FB5F";
@@ -32570,7 +32571,7 @@ createNode nurbsCurve -n "Stone_Statue__Unit_6_Lab_:curveShape2" -p "Stone_Statu
 		;
 createNode transform -n "Stone_Statue__Unit_6_Lab_:pCube6";
 	rename -uid "59551EE7-4B18-57DC-A0BB-5E91BF1C94E5";
-	setAttr ".t" -type "double3" -1.8889757944103256 3.7777976644327889 -14.910229679096217 ;
+	setAttr ".t" -type "double3" -1.8905157344103272 3.3513987662766396 -15.328237242102563 ;
 	setAttr ".r" -type "double3" 0 -19.452063418194673 0 ;
 	setAttr ".s" -type "double3" 0.18563714107457197 0.18563714107457197 0.18563714107457197 ;
 	setAttr ".rp" -type "double3" 6.5624560713768005 5.1858913898468018 4.8617902398109436 ;
