@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Stone Statue (Unit 6 Lab).ma
-//Last modified: Wed, Oct 08, 2025 08:35:30 PM
+//Last modified: Wed, Oct 08, 2025 08:41:02 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "polyBoolean" "polyBoolean" "1.1";
@@ -12,19 +12,19 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "2A47DD95-445B-EA16-8AE1-3BB52AB72850";
+fileInfo "UUID" "D59CBFA8-4F2F-2D53-8842-239C8F2FFAFF";
 createNode transform -s -n "persp";
 	rename -uid "0B6BAEFF-4D92-25FA-7349-B686F14B5DFA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.1629096703291166 12.469264882373301 22.605423128486283 ;
-	setAttr ".r" -type "double3" -22.199999999999378 -721.99999999999807 3.4808521239151297e-16 ;
+	setAttr ".t" -type "double3" 7.1785678061817872 11.487859258782311 25.205504389528247 ;
+	setAttr ".r" -type "double3" -15.600000000014271 -717.99999999991769 9.9452917826151705e-17 ;
 	setAttr ".rp" -type "double3" -8.8817841970012523e-16 0 0 ;
 	setAttr ".rpt" -type "double3" 2.1115458105624733e-15 2.084339815397404e-15 1.0909622465816475e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "306AD952-4E76-94A3-0CC2-9BADC4DC0B4D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 14.311236534702775;
+	setAttr ".coi" 16.458300615020043;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1863,8 +1863,11 @@ createNode nurbsCurve -n "pasted__curveShape5" -p "pasted__curve5";
 		;
 createNode transform -n "pasted__pCube9" -p "group";
 	rename -uid "4798C058-44F1-43B0-E8E7-FC9357FD6089";
-	setAttr ".t" -type "double3" 2.2147975639826663 0 -1.4510271657594727 ;
-	setAttr ".r" -type "double3" 0 -14.999999999999998 0 ;
+	setAttr ".t" -type "double3" 0.61802441813572928 0 -1.4174221215678817 ;
+	setAttr ".r" -type "double3" 0 -3.8557408456927744 0 ;
+	setAttr ".rp" -type "double3" 4.7948761041477139 0 -0.5938812312049303 ;
+	setAttr ".rpt" -type "double3" -0.0096736681303931232 0 1.2612412668961506 ;
+	setAttr ".sp" -type "double3" 4.7948761041477139 0 -0.5938812312049303 ;
 createNode mesh -n "pasted__pCubeShape9" -p "pasted__pCube9";
 	rename -uid "649BFD5A-4CA2-DB94-24EE-628DC4222930";
 	setAttr -k off ".v";
@@ -2280,13 +2283,17 @@ createNode mesh -n "pasted__pCubeShape9" -p "pasted__pCube9";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube10";
 	rename -uid "55FE77BB-458B-AB8D-89A6-8E9EEE05A8CF";
-	setAttr ".t" -type "double3" 1.1918508661287115 -0.31165162604954266 0.70237263380703097 ;
+	setAttr ".t" -type "double3" 1.5973641825798897 -0.22518938200879324 0.70237263380703097 ;
 	setAttr -av ".tx";
 	setAttr -av ".ty";
 	setAttr -av ".tz";
-	setAttr ".rp" -type "double3" 5.1131510734558105 9.4852123260498047 5.0667614936828613 ;
-	setAttr ".rpt" -type "double3" -1.4001472395845478 8.8817841970012523e-16 0.48622255751011512 ;
-	setAttr ".sp" -type "double3" 5.1131510734558105 9.4852123260498047 5.0667614936828613 ;
+	setAttr ".r" -type "double3" 11.672605202438668 25.233947853276494 15.761813140975894 ;
+	setAttr -av ".rx";
+	setAttr -av ".ry";
+	setAttr -av ".rz";
+	setAttr ".rp" -type "double3" 5.8611492237733929 9.284786825732235 5.8411461616974556 ;
+	setAttr ".rpt" -type "double3" -1.0530000899020686 0.20042550031754353 -0.2881621105044736 ;
+	setAttr ".sp" -type "double3" 5.8611492237733929 9.284786825732235 5.8411461616974556 ;
 createNode mesh -n "pCubeShape10" -p "pCube10";
 	rename -uid "3DB85A62-4CAC-A139-90F3-F19E320D27CF";
 	setAttr -k off ".v";
