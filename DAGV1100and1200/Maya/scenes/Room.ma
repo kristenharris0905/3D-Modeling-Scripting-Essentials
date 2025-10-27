@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Room.ma
-//Last modified: Sun, Oct 26, 2025 03:48:24 PM
+//Last modified: Mon, Oct 27, 2025 01:10:12 PM
 //Codeset: 1252
 file -rdi 1 -ns "Table1" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Scripting Essentials (1700)/Scripting-Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
 file -rdi 1 -ns "Chair" -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Scripting Essentials (1700)/Scripting-Essentials/DAGV1100and1200/Maya//scenes/Chair.ma";
@@ -38,11 +38,11 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "5233E0A0-4D69-4891-C112-53A0795A92A6";
+fileInfo "UUID" "8DD84131-4E49-11B5-45C4-7C93EB653D54";
 createNode transform -s -n "persp";
 	rename -uid "B28A536E-4420-334E-9F2D-859899D8DC98";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 29.477209492143139 40.901726458256903 33.948806252116619 ;
+	setAttr ".t" -type "double3" 20.125588413265167 36.629619608897762 42.093246175146582 ;
 	setAttr ".r" -type "double3" -34.800000000000303 27.200000000000024 0 ;
 	setAttr ".rp" -type "double3" 8.8817841970012523e-16 4.4408920985006262e-16 0 ;
 	setAttr ".rpt" -type "double3" -9.9898537091893237e-17 -5.489226888608791e-16 -1.3078058182805787e-16 ;
