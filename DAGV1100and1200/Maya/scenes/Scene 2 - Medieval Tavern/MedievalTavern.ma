@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: MedievalTavern.ma
-//Last modified: Thu, Nov 06, 2025 04:42:52 PM
+//Last modified: Fri, Nov 07, 2025 09:53:16 PM
 //Codeset: 1252
 file -rdi 1 -ns "Barrel_1" -rfn "Barrel_1RN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Scripting Essentials (1700)/Scripting-Essentials/DAGV1100and1200/Maya//scenes/Barrel_1.ma";
 file -rdi 1 -ns "Stool_1" -rfn "Stool_1RN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Scripting Essentials (1700)/Scripting-Essentials/DAGV1100and1200/Maya//scenes/Scene 2 - Medieval Tavern/Stool 1.ma";
@@ -14,18 +14,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26100)";
-fileInfo "UUID" "C4E1BFA7-484F-2475-4F10-C1819A831BB0";
+fileInfo "UUID" "87F9EA3D-4C33-3CDE-15AA-3AAB77073C4C";
 createNode transform -s -n "persp";
 	rename -uid "E3F24406-4D1E-421A-8324-6F882F95B27B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 142.74757645985005 84.139649192041645 121.42004363989426 ;
-	setAttr ".r" -type "double3" -31.80000000002196 -653.99999999999295 -7.8196905432778107e-15 ;
+	setAttr ".t" -type "double3" 17.145457782706512 10.852670928805196 122.53765065066813 ;
+	setAttr ".r" -type "double3" -3.6000000000000139 -736.79999999996551 1.0382357619576997e-16 ;
 	setAttr ".rpt" -type "double3" -1.1747832272832324e-15 -1.0758370713289974e-15 1.5035730333127481e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "62246F55-4444-706D-974C-55822CBE2D52";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 148.39016362349889;
+	setAttr ".coi" 43.882526213545205;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3323,15 +3323,15 @@ createNode mesh -n "pCubeShape19" -p "pCube19";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "AC2CB5DB-418B-BDF6-37FA-40BC1DD7A248";
+	rename -uid "32B3D23F-4A0D-5B01-CAC1-38927C79A8C6";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8E91B6E0-4E18-A585-A41C-6FABA20A314F";
+	rename -uid "DC54EA5D-4D62-9039-8DD1-4DA04D64154B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "9F32F3A7-40FD-6459-29A9-E38732F08933";
+	rename -uid "2241A014-4DA2-E7EE-06E0-A4B3BCCE3CB5";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A52D5234-40BC-A1F8-5AD1-DE98643ECA5A";
+	rename -uid "4679C759-4BF9-EFD3-6614-949E1698A0BE";
 	setAttr ".cdl" 1;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -3339,7 +3339,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "C7228B02-41F9-7843-3482-F395A7B14528";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "71119D4E-48D7-051C-DB19-0B9EE8311AA1";
+	rename -uid "D8B1A87F-49DC-1DED-7168-5581E118D50C";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "184BC2EB-450A-CE96-22CD-EEA5F9BBCFBE";
 	setAttr ".g" yes;
@@ -3491,13 +3491,18 @@ createNode polyCube -n "polyCube5";
 	setAttr ".cuv" 4;
 createNode reference -n "Barrel_1RN";
 	rename -uid "78EDBD7C-41F4-71D8-2BD3-A8B63E8702D3";
+	setAttr ".phl[1]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Barrel_1RN"
 		"Barrel_1RN" 0
-		"Barrel_1RN" 2
+		"Barrel_1RN" 4
 		2 "|Barrel_1:pCylinder1" "translate" " -type \"double3\" -31.02405812057008561 2.34478812229862577 -11.97010253324718043"
 		
-		2 "|Barrel_1:pCylinder1" "scale" " -type \"double3\" 1.83552659482317937 1.83552659482317937 1.83552659482317937";
+		2 "|Barrel_1:pCylinder1" "scale" " -type \"double3\" 1.83552659482317937 1.83552659482317937 1.83552659482317937"
+		
+		3 "Barrel_1:file1.message" ":initialMaterialInfo.texture" "-na"
+		5 3 "Barrel_1RN" "Barrel_1:file1.message" "Barrel_1RN.placeHolderList[1]" 
+		":initialMaterialInfo.t";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode polyCylinder -n "polyCylinder1";
@@ -3542,6 +3547,10 @@ createNode reference -n "Stool_1RN";
 		2 "|Stool_1:Stool" "translate" " -type \"double3\" 0 0 19.7771453833131261";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "sharedReferenceNode";
+	rename -uid "1D02DEEB-4CEE-D0DB-CF92-5DA330A7BBB1";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3592,6 +3601,9 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
+connectAttr "Barrel_1RN.phl[1]" ":initialMaterialInfo.t" -na;
 connectAttr "layer2.di" "LongWall.do";
 connectAttr "polyExtrudeFace5.out" "LongWallShape.i";
 connectAttr "layer2.di" "ShortWall.do";
@@ -3628,6 +3640,7 @@ connectAttr "FloorShape.wm" "polySplitRing2.mp";
 connectAttr "polyCube1.out" "polyTweak2.ip";
 connectAttr "polySplitRing2.out" "polyExtrudeFace6.ip";
 connectAttr "FloorShape.wm" "polyExtrudeFace6.mp";
+connectAttr "sharedReferenceNode.sr" "Stool_1RN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "FloorShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "ShortWallShape.iog" ":initialShadingGroup.dsm" -na;
